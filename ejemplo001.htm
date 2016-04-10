@@ -1,0 +1,15 @@
+<canvas id = "canvas" height = "520" width  ="520"></canvas>
+<script src = "simulacion.js"></script>
+<script>
+	var sim = new Simulacion();
+	var n = 10;
+	var ancho = 500/n;
+	for(i=0; i<n; i++)
+	{
+		var aleatorio = Math.random()*500;
+		var espacio=i*ancho
+		sim.dibujarlineas(espacio,aleatorio);
+		sim.dibujarbarras(espacio,aleatorio,ancho);
+	}
+	sim.dibujarejes();
+</script>
